@@ -46,3 +46,22 @@
 ### adicionar componentes principais, você torna a estimativa dos seus dados mais acurada,
 ### mas também mais complexa.
 
+# Autovalores e autovetores ----------------------------------------------------------------------------------------------------------------
+
+### Os autovalores e autovetores vem em pares. Simplesmente, um autovetor é uma direção,
+### como vertical ou 45º, enquanto um autovalor é um número que informa quanta variância
+### existe para os dados naquela direção. O autovetor com o mais autovalor é, portanto,
+### o primeiro componente principal. Existem mais autovalores e autovetores que podem ser
+### encontrados no conjunto de dados.
+
+### O número de autovetores e autovalores que existe é igual ao número de dimensões
+### que tem o conjuento de dados, Por exemplo, se existem duas variáveis, então o 
+### conjunto de dados é bi-dimensional. Isso significa que existem dois autovetores 
+### e autovalores. Similarmente, você irá encontrar três pares em um conjunto tri-
+### dimensional.
+
+### Podemos reenquadrar um conjunto de dados em termos destes auto-vectores e auto-valores 
+### sem alterar a informação subjacente. Note-se que o reenquadramento de um conjunto de
+### dados relativos a um conjunto de auto-valores e auto-vectores não implica 
+### a alteração dos dados em si, apenas se está a olhar para eles de um ângulo diferente, 
+### o que deveria representar melhor os dados.
