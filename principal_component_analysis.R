@@ -113,3 +113,13 @@ mtcars
 mtcars.pca <- prcomp(mtcars[,c(1:7,10,11)], center = TRUE, scale. = TRUE)
 
 summary(mtcars.pca)
+
+### Com isso você obtem 9 componentes principais, cada um desses explica uma porcentagem
+### da variação total do conjunto de dados. Isto indica: PC1 explica 63% da variação
+### total, que significa dois terços da variação total pode ser encapsulado apenas no 
+### primeiro componente principal. PC2 explica 23% da variância. Então, por conhecer a
+### posição de uma amostra em relação apenas a PC1 e PC2, você pode obter uma visão 
+### bastante acurada em relação as outras amostras, pois PC1 e PC2 já podem explicar
+### 86% da variância.
+
+str(mtcars.pca)
