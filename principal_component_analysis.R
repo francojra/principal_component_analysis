@@ -144,3 +144,12 @@ ggbiplot(mtcars.pca)
 ### valores movendo para a direita do gráfico. Isto permite-lhe ver como os pontos de 
 ### dados se relacionam com os eixos, mas não é muito informativo sem saber que ponto 
 ### corresponde a que amostra (carro).
+
+### Você pode promover um argumento ao ggbiplot, vamos adicionar os nomes das linhas
+### dos dados mtcars como rótulos. Cada ponto do gráfico será um nome do carro.
+
+ggbiplot(mtcars.pca, labels = rownames(mtcars))
+
+### Agora você pode ver quais carros são similares uns aos outros. Por exemplo, o
+### the Maserati Bora, Ferrari Dino e Ford Pantera L estão todos unidos no topo do
+### gráfico. Isos faz sentido, pois todos esses carros são de esporte.
