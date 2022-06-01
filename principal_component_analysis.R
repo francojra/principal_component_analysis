@@ -98,4 +98,18 @@
 # - gear: engrenagem: Número de velocidades de avanço: os carros desportivos tendem 
 # a ter mais velocidades.
 
-# - carb: carburador: número de carburadores: associado a motores mais potentes
+# - carb: carburador: número de carburadores: associado a motores mais potentes.
+
+# Computando os Componentes Principais -----------------------------------------------------------------------------------------------------
+
+### Devido a PCA trabalhar melhor com dados numéricos, você irá excluir duas variáveis
+### categóricas (vs e am). Então você terá uma matriz de 9 colunas e 32 linhas, que será
+### usada na função da PCA prcomp(). Você também irá adicionar a função dois argumentos
+### chamados center e scale como true. Então você pode visualizar o objeto criado com a 
+### PCA usando a função summary().
+
+mtcars
+
+mtcars.pca <- prcomp(mtcars[,c(1:7,10,11)], center = TRUE, scale. = TRUE)
+
+summary(mtcars.pca)
