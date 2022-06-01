@@ -123,3 +123,24 @@ summary(mtcars.pca)
 ### 86% da variância.
 
 str(mtcars.pca)
+
+# Gráfico PCA ------------------------------------------------------------------------------------------------------------------------------
+
+### Você irá fazer um biplot que inclui posição de cada amostra em termos de PC1 e PC2
+### e também mostrar como as variáveis iniciais são mapeadas nisso. Você irá usar o 
+### pacote ggbiplot que oferece uma função amigável para produzir gráficos biplot. O
+### biplot é um tipo de gráfico que permite você visualizar como as amostras se relacionam
+### umas as outras (quais amostras são similares e quais são diferentes). Isso irá
+### simultaneamente revelar como cada variável contribui para cada componente principal.
+
+library(ggbiplot)
+
+ggbiplot(mtcars.pca)
+
+# Interpretação do gráfico -----------------------------------------------------------------------------------------------------------------
+
+### Os eixos são vistos como setas com origem no ponto central. Aqui, vê-se que as 
+### variáveis hp, cilindro, e dispersão contribuem todas para o PC1, com os mais altos
+### valores movendo para a direita do gráfico. Isto permite-lhe ver como os pontos de 
+### dados se relacionam com os eixos, mas não é muito informativo sem saber que ponto 
+### corresponde a que amostra (carro).
