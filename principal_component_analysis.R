@@ -153,3 +153,24 @@ ggbiplot(mtcars.pca, labels = rownames(mtcars))
 ### Agora você pode ver quais carros são similares uns aos outros. Por exemplo, o
 ### the Maserati Bora, Ferrari Dino e Ford Pantera L estão todos unidos no topo do
 ### gráfico. Isos faz sentido, pois todos esses carros são de esporte.
+
+# Adicionando informações ao gráfico -------------------------------------------------------------------------------------------------------
+
+### Se você observar os grupos, perceberá que pode haver três categorias, uma de carros
+### dos United States, outros de carros japoneses e outro de carros europeus. Você faz 
+### uma lista dessas informações, então passa como um argumento da função ggbiplot.
+### Você também pode adicionar o argumento ellipse como true que desenha uma elipse em 
+### volta de cada grupo.
+
+mtcars.country <- c(rep("Japan", 3), rep("US",4), rep("Europe", 7),rep("US",3), 
+                    "Europe", rep("Japan", 3), rep("US",4), rep("Europe", 3), 
+                    "US", rep("Europe", 3))
+
+ggbiplot(mtcars.pca,ellipse = TRUE,  labels = rownames(mtcars), groups = mtcars.country)
+
+# Interpretação do novo gráfico ------------------------------------------------------------------------------------------------------------
+
+### Podemos ver que os carros americanos formam um grupo distinto e a direita. Observando
+### os eixos, você ver que os carros americanos apresentam altos valores de cyl, dips e wt.
+### Carros japoneses, por outro lado, são caracterizados por alto mpg. Carros europeus, são
+### médios e apresentam um grupo menos fortemente agrupado.
