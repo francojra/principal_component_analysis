@@ -65,3 +65,37 @@
 ### dados relativos a um conjunto de auto-valores e auto-vectores não implica 
 ### a alteração dos dados em si, apenas se está a olhar para eles de um ângulo diferente, 
 ### o que deveria representar melhor os dados.
+
+# Uma simples PCA --------------------------------------------------------------------------------------------------------------------------
+
+### Nessa seção você fará uma PCA usando um conjunto simples de dados. Você irá usar
+### o dataset mtcars disponível no R. Esse dataset consiste de dados de 32 modelos de
+### carros, tomados de uma loja americana. Para cada carro existem 11 atributos, expressos
+### em diferentes unidades. Elas são as seguintes:
+
+# - mpg: Consumo de combustível (Miles per (US) gallon): os carros mais potentes e mais 
+# pesados tendem a consumir mais combustível.
+
+# - cyl: cilindro: Número de cilindros: os carros mais potentes têm frequentemente.
+# mais cilindros
+
+# - disp: Deslocamento (cu.in.): o volume combinado dos cilindros do motor.
+
+# - hp: Potência bruta: esta é uma medida da potência gerada pelo carro.
+
+# - drat: Relação eixo traseiro: descreve como uma volta do eixo motor corresponde 
+# a uma volta das rodas. Valores mais elevados diminuirão a eficiência do combustível.
+
+# - wt: Peso (1000 lbs).
+
+# - qsec: 1/4 milha de tempo: a velocidade e aceleração dos carros.
+
+# - vs: Bloco do motor: isto denota se o motor do veículo tem a forma 
+# de um "V", ou se é uma forma recta mais comum.
+
+# - am: Transmissão: denota se a transmissão do carro é automática (0) ou manual (1).
+
+# - gear: engrenagem: Número de velocidades de avanço: os carros desportivos tendem 
+# a ter mais velocidades.
+
+# - carb: carburador: número de carburadores: associado a motores mais potentes
